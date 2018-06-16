@@ -3,7 +3,7 @@
 # Fail on first error
 set -e
 
-read -p "Codius host URL: "  CODIUS_HOST
+read -p "Codius host URL: (press enter to use any host)"  CODIUS_HOST
 
 dir=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 
