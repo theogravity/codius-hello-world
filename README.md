@@ -1,4 +1,4 @@
-# codius-hello-world
+# codius-hello-world-example
 
 *Feel free to contribute and make improvements by opening a PR.*
 
