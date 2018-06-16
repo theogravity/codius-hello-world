@@ -1,0 +1,12 @@
+{
+  "manifest": {
+    "name": "codius-hello-world",
+    "version": "1.0.0",
+    "machine": "small",
+    "port": "3000",
+    "containers": [{
+      "id": "app",
+      "image": "{username}/codius-hello-world@{docker-id}"
+    }]
+  }
+}

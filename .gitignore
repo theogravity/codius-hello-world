@@ -1,3 +1,5 @@
+.idea/
+
 # Logs
 logs
 *.log
@@ -59,3 +61,5 @@ typings/
 
 # next.js build output
 .next
+
+codius-manifest.json
