@@ -1,5 +1,7 @@
 # codius-hello-world
 
+*Feel free to contribute and make improvements by opening a PR.*
+
 This is an example app that executes on the [Codius](https://codius.org/) platform.
 
 The app is a sample node.js application, which will launch a web server, displaying a simple hello world page.
