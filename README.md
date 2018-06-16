@@ -13,7 +13,7 @@ Scripts are provided to:
 
 ## Requirements
 
-Do not do the install of these requirements on the Codius server. Do it on another machine.
+Do not install these items on the Codius server. Do it on another machine.
 
 - node.js version 8 or 10.
 - [Docker](https://www.docker.com/get-docker) installed locally. The latest CE version is fine.
