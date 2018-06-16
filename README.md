@@ -21,11 +21,11 @@ Scripts are provided to:
 
 Do not install these items on the Codius server. Do it on another machine.
 
-- node.js version 8 or 10.
+- node.js version 8 or 10. I use [nvm](https://github.com/codius/codius/issues/41) to install node.
 - [Docker](https://www.docker.com/get-docker) installed locally. The latest CE version is fine.
 - A [docker hub](https://hub.docker.com/) account
 
-You will probably need your own Codius server to do the actual deployment (as of now).
+You will probably need your own Codius server to do the actual deployment ([until this issue is resolved](https://github.com/codius/codius/issues/41)).
 
 [Codius server install instructions](https://medium.com/codius/how-to-run-your-own-codius-host-42e13afe1fb2)
 
@@ -129,16 +129,8 @@ Codius host URL: https://codius.theogravity.com
 
 ...
 
-# It died here on my local machine because I didn't have a proper moneyd setup I think
-# What I did instead was:
-# - copy the contents of the codius-manifest.json file
-# - logged into the Codius server as non-root
-# - Installed a local copy of node.js using nvm
-# - Installed a local global copy of codius, eg `npm i codius -g`
-# - Created a codius-manifest.json file and copied the contents from step 1 into it and saved
-# - Ran DEBUG=* codius upload codius-manifest.json --host ${CODIUS_HOST} --duration 200
-# - Replace ${CODIUS_HOST} with the target host, eg https://codius.theogravity.com
-# - For some reason, it always takes two attempts to work
+# It died here on my local machine because I didn't have a proper moneyd setup I think. 
+# See the next section in the readme on how to deal with this
 ```
 
 If you succeed, you'll get something like:
@@ -166,5 +158,17 @@ You can then paste the URL into a browser and see it run (the URL above is expir
 
 ![codius-app](https://github.com/theogravity/codius-hello-world/blob/master/codius.png?raw=true)
 
+## Executing the manifest from the Codius server (host) itself
 
+As stated in the prior example run, there are [issues](https://github.com/codius/codius/issues/41) trying to run the manifest upload from the non-server machine.
+
+Here's a way to get around that - you *must* login to the Codius server as a non-root user:
+
+- copy the contents of the `codius-manifest.json` file that was generated and save to a file
+- Installed a local copy of node.js using `nvm`
+- Installed a local global copy of codius, eg `npm i codius -g`
+- Ran `DEBUG=* codius upload codius-manifest.json --host ${CODIUS_HOST} --duration 200`
+- Replace ${CODIUS_HOST} with the target host, eg https://codius.theogravity.com
+
+For some reason, it always takes two attempts to work.
 
