@@ -154,8 +154,7 @@ Successfully Uploaded Pods to:
 
 You can then paste the URL into a browser and see it run (the URL above is expired by this posting):
 
-
-
+![codius-app](https://github.com/theogravity/codius-hello-world/blob/master/codius.png?raw=true)
 
 
 
