@@ -6,9 +6,13 @@ Talk to the [Codius Community](https://gitter.im/codius/codius-chat) on gitter.
 
 ## About 
 
-This is an example app that executes on the [Codius](https://codius.org/) platform.
+This is an example app that executes on the [Codius](https://codius.org/) platform. You pay an amount of cryptocurrency to have Codius run the docker containers specified in the codius manifest for a period of time.
 
-The app is a sample node.js application, which will launch a web server, displaying a simple hello world page.
+- The app sample node.js application, which will launch a web server, displaying a simple hello world page.
+- The app is packaged into a docker image, which gets uploaded to Docker Hub.
+- The Codius manifest file outlines the docker image(s) you want to run, which you use the `codius` client to upload to a Codius host.
+- The Codius host negogiates a price to pay for running the containers with the client. Once the price is settled on, the host reads the uploaded manifest file, downloads the image from Docker Host, and runs the container.
+- A random URL is generated and sent to the client, which the user then can use to interact with the container.
 
 Scripts are provided to:
 
