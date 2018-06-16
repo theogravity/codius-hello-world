@@ -2,6 +2,10 @@
 
 *Feel free to contribute and make improvements by opening a PR.*
 
+Talk to the [Codius Community](https://gitter.im/codius/codius-chat) on gitter.
+
+## About 
+
 This is an example app that executes on the [Codius](https://codius.org/) platform.
 
 The app is a sample node.js application, which will launch a web server, displaying a simple hello world page.
@@ -20,6 +24,10 @@ Do not install these items on the Codius server. Do it on another machine.
 - node.js version 8 or 10.
 - [Docker](https://www.docker.com/get-docker) installed locally. The latest CE version is fine.
 - A [docker hub](https://hub.docker.com/) account
+
+You will probably need your own Codius server to do the actual deployment (as of now).
+
+[Codius server install instructions](https://medium.com/codius/how-to-run-your-own-codius-host-42e13afe1fb2)
 
 ## Installation
 
