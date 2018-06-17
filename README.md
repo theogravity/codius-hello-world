@@ -11,7 +11,7 @@ This is an example app that executes on the [Codius](https://codius.org/) platfo
 - The app is a simple node.js application, which will launch a web server, displaying a hello world page.
 - The app is packaged into a docker image, which gets uploaded to Docker Hub.
 - The [Codius manifest file](https://github.com/codius/manifest) outlines the docker image(s) you want to run, which you use the `codius` client to upload to a Codius host (a server running `codiusd`).
-- A price to pay for running the containers is negogiated between the host and the client. Once the price is settled on, the host reads the uploaded manifest file, downloads the image from Docker Host, and runs the container.
+- A price to pay for running the containers is negogiated between the host and the client. Once the price is settled on, the host reads the uploaded manifest file, downloads the image from Docker Hub, and runs the container.
 - A random URL is generated and sent to the client, which the user then can use to interact with the container.
 
 Scripts are provided to:
